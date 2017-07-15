@@ -14,7 +14,13 @@ substract = function(x,y) x-y
 multiply <- function(x, y) x * y
 
 #4. arithmetic function - division
-divide <- function(x, y) x / y
+divide <- function(x, y) {
+  if (y == 0) {
+    return ("zero division error")
+  } else {
+    return(x / y)
+  }
+}
 
 #5. sqrt(x) returns the square roots of the elements of x, when x is a REAL scalar, vector, matrix or array.
 square = function(x) sqrt(x)
